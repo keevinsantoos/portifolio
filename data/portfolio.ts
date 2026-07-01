@@ -24,15 +24,15 @@ export const heroStats = [
 ];
 
 export const aboutParagraphs: string[] = [
-  "Sou desenvolvedor com atuação em infraestrutura de educação digital na SEDUC-PA, onde construo ferramentas internas e sistemas de gestão para unidades de tecnologia (CISEB) espalhadas pelo estado do Pará.",
-  "Minha atuação vai do backend — APIs, bancos relacionais, automações — ao frontend, com interfaces limpas em React e Next.js. Também trabalho com análise de dados, transformando planilhas e registros brutos em dashboards que viram decisão.",
+ "Sou analista de dados na SEDUC-PA, onde atuo no diagnóstico e resolução de problemas técnicos, e no desenvolvimento de scripts em Python e JavaScript para automatizar tarefas e rotinas administrativas das unidades de tecnologia (CISEB) espalhadas pelo estado do Pará.",
+  "Além da rotina formal, transformo esse trabalho em sistemas completos: interfaces em React e Next.js, bancos de dados relacionais e dashboards que organizam informação bruta em algo que vira decisão. Curso Sistemas de Informação, com formação complementar em análise de dados (SENAI CEDAM) e Python (Bootcamp DIO).",
   "Gosto de resolver o mesmo problema duas vezes: primeiro fazendo funcionar, depois fazendo funcionar bem — com documentação, tratamento de erro e um processo que qualquer pessoa da equipe consiga entender.",
 ];
 
 export const stackGroups: StackGroup[] = [
   {
     title: "Linguagens",
-    items: ["javascript", "typescript", "python", "apps-script", "sql", "html-css"],
+    items: ["javascript", "typescript", "python", "java", "apps-script", "sql", "html-css"],
   },
   {
     title: "Frontend",
