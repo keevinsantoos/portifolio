@@ -105,7 +105,7 @@ export const experience: ExperienceItem[] = [
   },
     {
     date: "2024 — 2026",
-    role: "Assistente de TI · Infraestrutura de Educação Digital",
+    role: "Assistente de TI · Infraestrutura de Redes & Manutenção de Sistemas",
     org: "TRAMONTINA BELÉM S/A",
     bullets: [
       "Suporte técnico e manutenção de sistemas internos da empresa",
