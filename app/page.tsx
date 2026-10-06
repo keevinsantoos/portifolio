@@ -9,13 +9,18 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <>
+      <a className="skip-link" href="#conteudo">
+        Pular para o conteúdo
+      </a>
       <Nav />
-      <Hero />
-      <About />
-      <Toolkit />
-      <Projects />
-      <Experience />
-      <Contact />
+      <main id="conteudo">
+        <Hero />
+        <About />
+        <Toolkit />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
     </>
   );
 }

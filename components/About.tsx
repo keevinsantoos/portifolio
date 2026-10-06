@@ -1,8 +1,4 @@
-import Image from "next/image";
 import { aboutParagraphs } from "@/data/portfolio";
-
-// Troque HAS_PHOTO para true depois de colocar sua foto em /public/images/foto.jpg
-const HAS_PHOTO = true;
 
 export default function About() {
   return (
@@ -16,28 +12,6 @@ export default function About() {
         </div>
 
         <div className="about-grid">
-          <div className="photo-frame">
-            {HAS_PHOTO ? (
-              <Image
-                src="/images/foto.jpg"
-                alt="Foto de Kevin"
-                width={560}
-                height={560}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                priority
-              />
-            ) : (
-              <span className="placeholder-text">
-                [ sua foto aqui ]
-                <br />
-                salve em /public/images/foto.jpg
-                <br />
-                e mude HAS_PHOTO para true
-                <br />
-                em components/About.tsx
-              </span>
-            )}
-          </div>
           <div className="about-text">
             {aboutParagraphs.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>

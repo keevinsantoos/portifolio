@@ -8,11 +8,11 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav>
+    <nav aria-label="Navegação principal">
       <div className="wrap">
-        <div className="logo">
-          @kevin<span>.prog</span>
-        </div>
+        <a className="logo" href="#home" aria-label="Kevin, início">
+          kevin<span>.prog</span>
+        </a>
         <div className="nav-links">
           {links.map((link) => (
             <a key={link.href} href={link.href}>
@@ -20,6 +20,9 @@ export default function Nav() {
             </a>
           ))}
         </div>
+        <a className="nav-cta" href="#contato">
+          Vamos conversar <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </nav>
   );

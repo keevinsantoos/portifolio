@@ -15,6 +15,12 @@ export type ExperienceItem = {
   date: string;
   role: string;
   org: string;
+  logo: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
   bullets: string[];
 };
 
@@ -24,7 +30,7 @@ export const heroStats = [
 ];
 
 export const aboutParagraphs: string[] = [
- "Sou analista de dados na SEDUC-PA, onde atuo no diagnóstico e resolução de problemas técnicos, e no desenvolvimento de scripts em Python e JavaScript para automatizar tarefas e rotinas administrativas das unidades de tecnologia (CISEB) espalhadas pelo estado do Pará.",
+  "Atuo com suporte técnico na Secretaria de Turismo de Belém (SETUR) e como analista de dados na SEDUC-PA, onde contribuo para o diagnóstico e a resolução de problemas técnicos e automatizo tarefas das unidades de tecnologia (CISEB) no Pará.",
   "Além da rotina formal, transformo esse trabalho em sistemas completos: interfaces em React e Next.js, bancos de dados relacionais e dashboards que organizam informação bruta em algo que vira decisão. Curso Sistemas de Informação, com formação complementar em análise de dados (SENAI CEDAM) e Python (Bootcamp DIO).",
   "Gosto de resolver o mesmo problema duas vezes: primeiro fazendo funcionar, depois fazendo funcionar bem — com documentação, tratamento de erro e um processo que qualquer pessoa da equipe consiga entender.",
 ];
@@ -32,19 +38,56 @@ export const aboutParagraphs: string[] = [
 export const stackGroups: StackGroup[] = [
   {
     title: "Linguagens",
-    items: ["javascript", "typescript", "python", "java", "apps-script", "sql", "html-css"],
+    items: ["javascript", "typescript", "python", "java", "sql"],
   },
   {
     title: "Frontend",
-    items: ["react", "next.js", "tailwind"],
+    items: [
+      "html5",
+      "css",
+      "react",
+      "next.js",
+      "tailwind",
+      "vite",
+      "radix-ui",
+      "lucide",
+      "motion",
+      "three.js",
+      "react-markdown",
+    ],
   },
   {
-    title: "Backend & bancos",
-    items: ["node.js", "express", "postgresql", "jwt", "bcrypt", "google-sheets"],
+    title: "Backend & APIs",
+    items: [
+      "node.js",
+      "express",
+      "firebase-auth",
+      "firebase-admin",
+      "jwt",
+      "bcrypt",
+    ],
   },
   {
-    title: "Automação & dados",
-    items: ["google-apps-script", "selenium", "gspread", "looker-studio", "git-github"],
+    title: "Banco de dados",
+    items: ["postgresql", "firestore"],
+  },
+  {
+    title: "Inteligência artificial",
+    items: ["gemini-api"],
+  },
+  {
+    title: "Automação & análise de dados",
+    items: [
+      "google-sheets",
+      "google-apps-script",
+      "selenium",
+      "gspread",
+      "looker-studio",
+    ],
+  },
+  {
+    title: "Ferramentas de desenvolvimento",
+    items: ["vercel", "npm", "git", "github"],
   },
 ];
 
@@ -94,8 +137,32 @@ export const projects: Project[] = [
 export const experience: ExperienceItem[] = [
   {
     date: "2026 — Presente",
+    role: "Suporte Técnico",
+    org: "Secretaria Municipal de Turismo de Belém — SETUR",
+    logo: {
+      src: "/institution-logos/setur-stacked.png",
+      alt: "Logo da Prefeitura de Belém, com Turismo abaixo do símbolo",
+      width: 1246,
+      height: 563,
+    },
+    bullets: [
+      "Atendimento a usuários, orientação sobre recursos de TI e acompanhamento de chamados",
+      "Diagnóstico e resolução de problemas em computadores, programas e periféricos",
+      "Instalação, configuração e atualização de sistemas e equipamentos",
+      "Suporte a impressoras, contas de usuário, acessos e conectividade de rede",
+      "Registro das soluções e encaminhamento de casos mais complexos às equipes responsáveis",
+    ],
+  },
+  {
+    date: "2025 — Presente",
     role: "Desenvolvedor · Infraestrutura de Educação Digital",
     org: "SEDUC-PA (Secretaria de Educação do Pará) — CISEB",
+    logo: {
+      src: "/institution-logos/seduc-pa-dark.png",
+      alt: "Logo da Secretaria de Educação e do Governo do Estado do Pará",
+      width: 720,
+      height: 243,
+    },
     bullets: [
       "Desenvolvimento e manutenção de sistemas internos para 16 unidades CISEB no Pará",
       "Automação de processos com Google Apps Script (frequência, agendamento, chamados)",
@@ -107,6 +174,12 @@ export const experience: ExperienceItem[] = [
     date: "2024 — 2026",
     role: "Assistente de TI · Infraestrutura de Redes & Manutenção de Sistemas",
     org: "TRAMONTINA BELÉM S/A",
+    logo: {
+      src: "/institution-logos/tramontina.svg",
+      alt: "Tramontina",
+      width: 734,
+      height: 111,
+    },
     bullets: [
       "Suporte técnico e manutenção de sistemas internos da empresa",
       "envio de relatórios e análise de dados para otimização de processos",

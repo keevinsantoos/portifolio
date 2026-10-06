@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { experience } from "@/data/portfolio";
 
 export default function Experience() {
@@ -16,7 +17,16 @@ export default function Experience() {
             <div className="timeline-item" key={item.role}>
               <div className="timeline-date">{item.date}</div>
               <h3>{item.role}</h3>
-              <div className="timeline-org">{item.org}</div>
+              <div className="timeline-org">
+                <Image
+                  className="experience-logo"
+                  src={item.logo.src}
+                  alt={item.logo.alt}
+                  width={item.logo.width}
+                  height={item.logo.height}
+                />
+                <span>{item.org}</span>
+              </div>
               <ul>
                 {item.bullets.map((bullet, i) => (
                   <li key={i}>{bullet}</li>

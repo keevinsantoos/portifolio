@@ -27,6 +27,13 @@ export const metadata: Metadata = {
   title: "Kevin — Desenvolvedor & Análise de Dados",
   description:
     "Portfólio de Kevin — desenvolvedor focado em automação de processos, ferramentas internas e análise de dados.",
+  openGraph: {
+    title: "Kevin — Desenvolvedor & Análise de Dados",
+    description:
+      "Automação de processos, sistemas web e análise de dados para transformar trabalho manual em soluções práticas.",
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

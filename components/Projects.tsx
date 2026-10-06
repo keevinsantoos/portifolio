@@ -16,9 +16,10 @@ export default function Projects() {
 
         <div className="proj-list">
           {projects.map((project) => (
-            <div className="proj-item" key={project.num}>
-              <span className="proj-num">{project.num}</span>
+            <article className="proj-item" key={project.num}>
+              <span className="proj-num" aria-hidden="true">{project.num}</span>
               <div className="proj-info">
+                <span className="proj-kicker">PROJETO {project.num}</span>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="stack-mini">
@@ -27,10 +28,18 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-              <a href={project.link} className="proj-link">
-                repositório <span className="proj-arrow">→</span>
-              </a>
-            </div>
+              {project.link !== "#" && (
+                <a
+                  href={project.link}
+                  className="proj-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Abrir repositório de ${project.title} em uma nova aba`}
+                >
+                  Ver repositório <span className="proj-arrow" aria-hidden="true">↗</span>
+                </a>
+              )}
+            </article>
           ))}
         </div>
       </div>

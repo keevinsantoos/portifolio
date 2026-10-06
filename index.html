@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061224">
+    <meta name="description" content="Portfólio de Kevin — automação de processos, sistemas web e análise de dados.">
+    <link rel="icon" type="image/svg+xml" href="app/icon.svg">
+    <title>Kevin — Desenvolvedor &amp; Análise de Dados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="portfolio-home">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Kevin, início">kevin<span>.prog</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal">
+        <a class="active" href="#home" aria-current="page">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header-meta">
+        <span class="availability"><span class="availability-dot" aria-hidden="true"></span>Status a confirmar</span>
+        <time class="local-clock" data-local-clock>--:--</time>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero portfolio-section" id="home" aria-labelledby="hero-title">
+        <div class="hero-card" data-reveal>
+          <div class="hero-copy">
+            <p class="hero-name">Kevin Santos</p>
+            <p class="eyebrow"><span class="eyebrow-line"></span>DESENVOLVIMENTO · AUTOMAÇÃO · DADOS</p>
+            <h1 id="hero-title">Transformo processos em <span>soluções digitais.</span></h1>
+            <p class="hero-description">Desenvolvo sistemas, automações e dashboards para simplificar o trabalho e ajudar equipes a tomar decisões melhores.</p>
+            <div class="button-row">
+              <a class="button button-primary" href="mailto:kevinhenriqueng@gmail.com">E-mail <span aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="#projetos">Conheça meus projetos <span aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+          <div class="hero-media-stack">
+            <figure class="hero-portrait">
+              <img src="public/images/foto.jpg" alt="Retrato de Kevin" width="1280" height="960">
+              <figcaption><span>KEVIN SANTOS</span><span>BELÉM · PARÁ</span></figcaption>
+            </figure>
+            <div class="hero-tech-strip" aria-label="Tecnologias utilizadas">
+              <p>Tecnologias que utilizo no desenvolvimento dos meus projetos</p>
+              <div class="stack-marquee" data-stacks-marquee aria-label="Faixa contínua de tecnologias"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section portfolio-section section-band" id="sobre" aria-labelledby="about-title">
+        <div class="section-heading" data-reveal><div><p class="eyebrow"><span class="eyebrow-line"></span>SOBRE MIM</p><h2 id="about-title">Olá, seja bem-vindo</h2></div></div>
+        <div class="about-layout" data-reveal>
+          <div class="about-lead"><p>Atuo com suporte técnico na Secretaria de Turismo de Belém (SETUR) e como analista de dados na SEDUC-PA, onde contribuo para o diagnóstico e a resolução de problemas técnicos e automatizo tarefas das unidades de tecnologia (CISEB) no Pará.</p></div>
+          <div class="about-copy">
+            <p>Além da rotina formal, transformo esse trabalho em sistemas completos: interfaces em React e Next.js, bancos de dados relacionais e dashboards que organizam informação bruta em algo que vira decisão. Atualmente, curso Ciência da Computação na Universidade da Amazônia (UNAMA). Também cursei Sistemas de Informação na Estácio de Sá, curso trancado em 2026. Tenho formação complementar em análise de dados (SENAI CEDAM) e Python (Bootcamp DIO).</p>
+            <p>Gosto de resolver o mesmo problema duas vezes: primeiro fazendo funcionar, depois fazendo funcionar bem — com documentação, tratamento de erro e um processo que qualquer pessoa da equipe consiga entender.</p>
+          </div>
+        </div>
+        <div class="process-section" aria-labelledby="process-title" data-reveal>
+          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span>MEU PROCESSO</p><h2 id="process-title">Da ideia à melhoria contínua</h2></div></div>
+          <ol class="process-grid">
+            <li class="process-card"><span class="card-index">01</span><div><h3>Entender</h3><p>Mapeio o processo e identifico onde o trabalho pode melhorar.</p></div><span class="process-arrow" aria-hidden="true">↗</span></li>
+            <li class="process-card"><span class="card-index">02</span><div><h3>Construir</h3><p>Desenvolvo sistemas, automações e dashboards para cada contexto.</p></div><span class="process-arrow" aria-hidden="true">↗</span></li>
+            <li class="process-card"><span class="card-index">03</span><div><h3>Evoluir</h3><p>Valido, documento e aprimoro a solução com quem vai usá-la.</p></div><span class="process-arrow" aria-hidden="true">↗</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="skills-section portfolio-section" id="habilidades" aria-labelledby="skills-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow"><span class="eyebrow-line"></span>HABILIDADES</p><h2 id="skills-title">Tecnologias e ferramentas</h2></div>
+          <p class="section-description">Da automação de processos internos à análise dos dados que ela gera.</p>
+        </div>
+        <div class="technology-groups" data-stack-groups aria-label="Tecnologias e ferramentas organizadas por categoria"></div>
+        <div class="skills-services">
+          <div class="section-heading" data-reveal><div><p class="eyebrow"><span class="eyebrow-line"></span>ÁREAS DE ATUAÇÃO</p><h2>Soluções digitais</h2></div><a class="text-link" href="services.html">Ver serviços <span aria-hidden="true">↗</span></a></div>
+          <div class="service-grid">
+            <article class="service-card" data-reveal><span class="card-index">01</span><h3>Sistemas web</h3><p>Interfaces em React e Next.js, bancos de dados relacionais e dashboards que organizam informação bruta em algo que vira decisão.</p><a class="card-link" href="services.html">Saiba mais <span aria-hidden="true">↗</span></a></article>
+            <article class="service-card" data-reveal><span class="card-index">02</span><h3>Automação de processos</h3><p>Scripts em Python e JavaScript para automatizar tarefas e rotinas administrativas.</p><a class="card-link" href="services.html">Saiba mais <span aria-hidden="true">↗</span></a></article>
+            <article class="service-card" data-reveal><span class="card-index">03</span><h3>Análise de dados</h3><p>Dashboards para organizar dados e apoiar a gestão e a tomada de decisão.</p><a class="card-link" href="services.html">Saiba mais <span aria-hidden="true">↗</span></a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section portfolio-section section-band" id="experiencia" aria-labelledby="experience-title">
+        <div class="section-heading" data-reveal><div><p class="eyebrow"><span class="eyebrow-line"></span>TRAJETÓRIA</p><h2 id="experience-title">Experiência profissional</h2></div></div>
+        <div class="experience-grid">
+          <article class="experience-card" data-reveal>
+            <div class="card-topline"><span class="company-mark"><img class="company-logo company-logo-setur" src="public/institution-logos/setur-stacked.png" alt="Logo da Prefeitura de Belém, com Turismo abaixo do símbolo" width="1246" height="563"></span><span class="period">2026 — Presente</span></div>
+            <p class="eyebrow">SITE: <a href="https://setur.belem.pa.gov.br/" target="_blank" rel="noopener noreferrer">SETUR.BELEM.PA.GOV.BR</a></p>
+            <h3>Suporte Técnico</h3>
+            <p class="card-subtitle">Secretaria Municipal de Turismo de Belém — SETUR</p>
+            <ul class="detail-list">
+              <li>Atendimento a usuários, orientação sobre recursos de TI e acompanhamento de chamados</li>
+              <li>Diagnóstico e resolução de problemas em computadores, programas e periféricos</li>
+              <li>Instalação, configuração e atualização de sistemas e equipamentos</li>
+              <li>Suporte a impressoras, contas de usuário, acessos e conectividade de rede</li>
+              <li>Registro das soluções e encaminhamento de casos mais complexos às equipes responsáveis</li>
+            </ul>
+          </article>
+          <article class="experience-card" data-reveal>
+            <div class="card-topline"><span class="company-mark"><img class="company-logo company-logo-seduc" src="public/institution-logos/seduc-pa-dark.png" alt="Logo da Secretaria de Educação e do Governo do Estado do Pará" width="720" height="243"></span><span class="period">2025 — Presente</span></div>
+            <p class="eyebrow">SITE: NÃO INFORMADO</p>
+            <h3>Desenvolvedor · Infraestrutura de Educação Digital</h3>
+            <p class="card-subtitle">SEDUC-PA (Secretaria de Educação do Pará) — CISEB</p>
+            <ul class="detail-list">
+              <li>Desenvolvimento e manutenção de sistemas internos para 16 unidades CISEB no Pará</li>
+              <li>Automação de processos com Google Apps Script (frequência, agendamento, chamados)</li>
+              <li>Construção de dashboards em Looker Studio para gestão e tomada de decisão</li>
+              <li>Modelagem de banco de dados e APIs para plataformas de gestão educacional</li>
+            </ul>
+          </article>
+          <article class="experience-card" data-reveal>
+            <div class="card-topline"><span class="company-mark"><img class="company-logo company-logo-tramontina" src="public/institution-logos/tramontina.svg" alt="Tramontina" width="734" height="111"></span><span class="period">2024 — 2026</span></div>
+            <p class="eyebrow">SITE: NÃO INFORMADO</p>
+            <h3>Assistente de TI · Infraestrutura de Redes &amp; Manutenção de Sistemas</h3>
+            <p class="card-subtitle">TRAMONTINA BELÉM S/A</p>
+            <ul class="detail-list">
+              <li>Suporte técnico e manutenção de sistemas internos da empresa</li>
+              <li>envio de relatórios e análise de dados para otimização de processos</li>
+              <li>Construção de dashboards em Looker Studio para gestão e tomada de decisão</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section portfolio-section" id="projetos" aria-labelledby="projects-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow"><span class="eyebrow-line"></span>PROJETOS EM DESTAQUE</p><h2 id="projects-title">Sistemas construídos do zero</h2></div>
+          <p class="section-description">Da concepção ao deploy, incluindo documentação técnica.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured" data-reveal>
+            <div class="project-visual visual-blue"><span>01</span><small>REPOSITÓRIO NO GITHUB</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span>PROJETO 01</span><span>SISTEMA WEB</span></div>
+              <h3>Sistema de Gestão para Conveniência — Conveniência Caixa</h3>
+              <p>Sistema web para gerenciamento de caixa, comandas, produtos, estoque, vendas e relatórios financeiros.</p>
+              <div class="tag-row"><span>next.js</span><span>javascript</span><span>prisma orm</span><span>postgresql</span><span>neon</span><span>vercel</span></div>
+              <div class="project-links"><a href="https://github.com/keevinsantoos/conveniencia-caixa-next" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-gray"><span>02</span><small>REPOSITÓRIO NO GITHUB</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span>PROJETO 02</span><span>PORTFÓLIO WEB</span></div>
+              <h3>Portfólio Profissional</h3>
+              <p>Desenvolvimento de portfólio web responsivo para apresentação profissional, experiências, habilidades e projetos.</p>
+              <div class="tag-row"><span>next.js</span><span>typescript</span></div>
+              <div class="project-links"><a href="https://github.com/keevinsantoos/portifolio" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-blue"><span>03</span><small>REPOSITÓRIO NO GITHUB</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span>PROJETO 03</span><span>INTELIGÊNCIA ARTIFICIAL</span></div>
+              <h3>Sistema de Avaliação com Inteligência Artificial</h3>
+              <p>Aplicação web para avaliação com integração de inteligência artificial para processamento e geração de resultados.</p>
+              <div class="tag-row"><span>typescript</span><span>vite</span><span>node.js</span><span>google gemini api</span></div>
+              <div class="project-links"><a href="https://github.com/keevinsantoos/Avalia--o-pd" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-green"><span>04</span><small>REPOSITÓRIO NO GITHUB</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span>PROJETO 04</span><span>INTELIGÊNCIA ARTIFICIAL</span></div>
+              <h3>Sistema de Plano de Trabalho com IA</h3>
+              <p>Aplicação web para elaboração e organização de planos de trabalho com recursos de inteligência artificial.</p>
+              <div class="tag-row"><span>typescript</span><span>vite</span><span>node.js</span><span>google gemini api</span></div>
+              <div class="project-links"><a href="https://github.com/keevinsantoos/plano-de-trabalho" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-blue"><span>05</span><small>APLICAÇÃO ONLINE</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span>PROJETO 05</span><span>CISEB</span></div>
+              <h3>Sistema de Plano de Aula — CISEB</h3>
+              <p>Aplicação web desenvolvida para criação e organização de planos de aula, com recursos de inteligência artificial. Projeto hospedado e disponível para acesso online.</p>
+              <div class="tag-row"><span>google ai studio</span><span>gemini</span><span>vercel</span></div>
+              <div class="project-links">
+                <a href="https://cisebmag.vercel.app/" target="_blank" rel="noopener noreferrer">Abrir aplicação <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/keevinsantoos/plano-de-aula" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal><div class="project-visual visual-blue"><span>06</span><small>PRÉVIA NÃO INFORMADA</small></div><div class="project-content"><div class="project-meta"><span>PROJETO 06</span><span>DOMÍNIO NÃO INFORMADO</span></div><h3>Plataforma Feira de Ciências — SEDUC-PA</h3><p>Sistema completo de inscrição e divulgação de projetos científicos da rede estadual do Pará. Arquitetura MVC no backend, autenticação JWT, validação em duas camadas e frontend em Next.js com fluxo de cadastro em etapas.</p><div class="tag-row"><span>next.js</span><span>express</span><span>postgresql</span><span>typescript</span></div><span class="project-link-unavailable">Link não informado</span></div></article>
+          <article class="project-card" data-reveal><div class="project-visual visual-green"><span>07</span><small>PRÉVIA NÃO INFORMADA</small></div><div class="project-content"><div class="project-meta"><span>PROJETO 07</span><span>DOMÍNIO NÃO INFORMADO</span></div><h3>Central de Chamados CISEB</h3><p>Helpdesk completo rodando 100% em Google Workspace — perfis de usuário/técnico/admin, categorias com SLA, notificações por e-mail e anexos via Drive.</p><div class="tag-row"><span>apps script</span><span>sheets</span><span>gmail api</span></div><span class="project-link-unavailable">Link não informado</span></div></article>
+          <article class="project-card" data-reveal><div class="project-visual visual-gray"><span>08</span><small>PRÉVIA NÃO INFORMADA</small></div><div class="project-content"><div class="project-meta"><span>PROJETO 08</span><span>DOMÍNIO NÃO INFORMADO</span></div><h3>Bot de Verificação de Agenda</h3><p>Automação em Python que monitora o Google Calendar em intervalos programados, autenticando via OAuth2 e preparando disparo de avisos automáticos.</p><div class="tag-row"><span>python</span><span>google calendar api</span><span>oauth2</span></div><span class="project-link-unavailable">Link não informado</span></div></article>
+          <article class="project-card" data-reveal><div class="project-visual visual-green"><span>09</span><small>PRÉVIA NÃO INFORMADA</small></div><div class="project-content"><div class="project-meta"><span>PROJETO 09</span><span>DOMÍNIO NÃO INFORMADO</span></div><h3>Automação de Convocação — CISEB</h3><p>Script que lê uma planilha de matrículas selecionadas e dispara convocações automáticas, controlando status de envio e evitando duplicidade de contato por aluno.</p><div class="tag-row"><span>python</span><span>gspread</span><span>selenium</span></div><span class="project-link-unavailable">Link não informado</span></div></article>
+          <article class="project-card" data-reveal><div class="project-visual visual-blue"><span>10</span><small>PRÉVIA NÃO INFORMADA</small></div><div class="project-content"><div class="project-meta"><span>PROJETO 10</span><span>DOMÍNIO NÃO INFORMADO</span></div><h3>Totem CISEB — Check-in QR Code</h3><p>Kiosk de presença via QR Code em Next.js integrado a Google Sheets, com arquitetura modular e camada de API própria.</p><div class="tag-row"><span>next.js</span><span>react</span><span>sheets api</span></div><span class="project-link-unavailable">Link não informado</span></div></article>
+        </div>
+        <div class="testimonial-inline" data-reveal><p class="eyebrow"><span class="eyebrow-line"></span>DEPOIMENTOS</p><h3>O que dizem sobre o trabalho</h3><p>Depoimento não informado. <span>Nome e local a adicionar</span></p></div>
+      </section>
+
+      <section class="education-section portfolio-section section-band" id="formacao" aria-labelledby="education-title">
+        <div class="section-heading" data-reveal><div><p class="eyebrow"><span class="eyebrow-line"></span>FORMAÇÃO</p><h2 id="education-title">Formação e cursos</h2></div></div>
+        <div class="education-list" data-reveal>
+          <article class="education-entry">
+            <div class="education-university-mark">
+              <img src="public/institution-logos/unama.svg" alt="Logo da Universidade da Amazônia — UNAMA" width="471" height="140">
+            </div>
+            <div class="education-detail">
+              <span>Graduação · 2026–2028 (previsão)</span>
+              <h3>Ciência da Computação</h3>
+              <small>Universidade da Amazônia — UNAMA</small>
+            </div>
+          </article>
+          <article class="education-entry">
+            <div class="education-university-mark">
+              <img src="public/institution-logos/estacio.svg" alt="Logo da Estácio" width="127" height="32">
+            </div>
+            <div class="education-detail">
+              <span>Graduação · 2024–2026 (trancada)</span>
+              <h3>Sistemas de Informação</h3>
+              <small>Estácio de Sá</small>
+            </div>
+          </article>
+          <article class="education-entry">
+            <div class="education-university-mark senai-university-mark">
+              <img src="public/institution-logos/senai.png" alt="Logo do SENAI" width="436" height="110">
+            </div>
+            <div class="education-detail">
+              <span>Formação complementar</span>
+              <h3>Análise de Dados</h3>
+              <small>SENAI CEDAM</small>
+            </div>
+          </article>
+          <article class="education-entry">
+            <div class="education-university-mark">
+              <img src="public/institution-logos/dio.png" alt="Logo da DIO" width="1334" height="513">
+            </div>
+            <div class="education-detail">
+              <span>Bootcamp</span>
+              <h3>Python</h3>
+              <small>DIO</small>
+            </div>
+          </article>
+        </div>
+        <p class="education-source-note">
+          Logo do SENAI: <a href="https://commons.wikimedia.org/wiki/File:SENAI_logo_2024.png" target="_blank" rel="noopener noreferrer">Ayamaguti, Wikimedia Commons</a>, licenciada sob <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
+        </p>
+      </section>
+
+      <section class="contact-section portfolio-section" id="contato" aria-labelledby="contact-title">
+        <div class="contact-layout" data-reveal>
+          <div><p class="eyebrow"><span class="eyebrow-line"></span>CONTATO</p><h2 id="contact-title">Vamos conversar sobre o que podemos construir.</h2><p>Tem um processo manual que devia ser automático? Entre em contato.</p><a class="button button-primary" href="mailto:kevinhenriqueng@gmail.com">Enviar um e-mail <span aria-hidden="true">↗</span></a></div>
+          <div class="contact-links">
+            <a href="mailto:kevinhenriqueng@gmail.com"><span>E-mail</span><strong>kevinhenriqueng@gmail.com</strong><span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/kevin-santos-9b450a326" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Kevin Santos</strong><span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/keevinsantoos" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>@keevinsantoos</strong><span aria-hidden="true">↗</span></a>
+            <a href="public/cv.pdf"><span>Currículo</span><strong>Baixar CV</strong><span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main"><a class="brand" href="#home">kevin<span>.prog</span></a><p>© 2026 Kevin.prog — Belém, PA</p><nav aria-label="Navegação do rodapé"><a href="#home">Início</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a><a href="services.html">Serviços</a></nav><time class="local-clock" data-local-clock>--:--</time></div>
+      <div class="footer-bottom"><span>Construído com HTML, CSS e JavaScript</span><button class="go-top" type="button" data-go-top>Voltar ao topo <span aria-hidden="true">↑</span></button></div>
+    </footer>
+  </body>
+</html>
