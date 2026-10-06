@@ -1,13 +1,10 @@
 # Portfólio de Kevin Santos
 
-O repositório contém duas versões do portfólio:
+O portfólio usa uma única versão estática. `index.html` é a página principal;
+`services.html`, `contact.html` e `404.html` são páginas complementares. O
+visual e as interações ficam em `styles.css` e `script.js`.
 
-- **Site estático**, servido a partir da raiz do projeto. `index.html` é a
-  página principal; `services.html`, `contact.html` e `404.html` são páginas
-  complementares. O visual e as interações ficam em `styles.css` e `script.js`.
-- **Aplicação Next.js**, formada por `app/`, `components/` e `data/`.
-
-## Executar o site estático
+## Executar localmente
 
 Na raiz do projeto, inicie um servidor de arquivos estáticos:
 
@@ -15,23 +12,11 @@ Na raiz do projeto, inicie um servidor de arquivos estáticos:
 py -m http.server 4173
 ```
 
-Acesse `http://localhost:4173/`.
-
-## Executar a aplicação Next.js
-
-Instale as dependências e inicie o servidor de desenvolvimento:
+Acesse `http://localhost:4173/`. Para gerar a pasta de publicação localmente:
 
 ```powershell
-npm install
-npm run dev
-```
-
-Para verificar a aplicação:
-
-```powershell
-npm run lint
-npm exec tsc -- --noEmit --incremental false
 npm run build
 ```
 
-Os assets compartilhados ficam em `public/`.
+O build gera o site em `dist/`. A Vercel publica essa pasta, com o site
+atualizado como página principal. Os assets compartilhados ficam em `public/`.
