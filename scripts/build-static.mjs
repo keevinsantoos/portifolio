@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
+const source = join(root, "src");
 const output = join(root, "dist");
 const pages = [
   "index.html",
@@ -14,16 +15,16 @@ const pages = [
 ];
 
 for (const page of pages) {
-  await access(join(root, page));
+  await access(join(source, page));
 }
-await access(join(root, "public"));
+await access(join(source, "public"));
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 
 for (const page of pages) {
-  await cp(join(root, page), join(output, page));
+  await cp(join(source, page), join(output, page));
 }
-await cp(join(root, "public"), join(output, "public"), { recursive: true });
+await cp(join(source, "public"), join(output, "public"), { recursive: true });
 
 console.log(`Static portfolio built in ${output}`);
