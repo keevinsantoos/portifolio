@@ -10,16 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261007-square">
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="contact-page">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Kevin, início">kevin<span>.prog</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Abrir menu"><span></span><span></span></button>
-      <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal"><a href="index.html">Início</a><a href="services.html">Serviços</a><a class="active" href="contact.html" aria-current="page">Contato</a></nav>
-      <div class="header-meta"><span class="availability"><span class="availability-dot" aria-hidden="true"></span>Status a confirmar</span><time class="local-clock" data-local-clock>--:--</time></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="services.html">Serviços</a>
+        <a class="active" href="contact.html" aria-current="page">Contato</a>
+      </nav>
+      <div class="header-meta">
+        <span class="availability"><span class="availability-dot" aria-hidden="true"></span>Status a confirmar</span>
+        <time class="local-clock" data-local-clock>--:--</time>
+      </div>
     </header>
 
     <main id="conteudo" class="inner-page">
@@ -27,14 +36,14 @@
         <p class="eyebrow"><span class="eyebrow-line"></span>CONTATO</p>
         <h1>Tem um processo manual que devia ser automático? Vamos conversar.</h1>
         <p>Histórico profissional completo, projetos e habilidades em um único documento.</p>
-        <div class="button-row"><a class="button button-primary" href="mailto:kevinhenriqueng@gmail.com">E-mail <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="mailto:kevinhenriqueng@gmail.com?subject=Agendar%20conversa">Agendar conversa <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="public/cv.pdf">Baixar CV <span aria-hidden="true">↓</span></a></div>
+        <div class="button-row"><a class="button button-primary" href="mailto:kevinhenriqueng@gmail.com">E-mail <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 16 16" focusable="false"><path d="M4 12 12 4M5 4h7v7"/></svg></span></a><a class="button button-secondary" href="mailto:kevinhenriqueng@gmail.com?subject=Agendar%20conversa">Agendar conversa <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 16 16" focusable="false"><path d="M4 12 12 4M5 4h7v7"/></svg></span></a><a class="button button-secondary" href="public/cv.pdf">Baixar CV <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 16 16" focusable="false"><path d="M8 3v10m0 0 4-4m-4 4L4 9"/></svg></span></a></div>
       </section>
 
       <section class="section-shell social-section" aria-labelledby="social-title">
         <div class="section-heading" data-reveal><div><p class="eyebrow"><span class="eyebrow-line"></span>REDES</p><h2 id="social-title">Encontre-me online</h2></div></div>
         <div class="social-grid">
-          <a class="social-card surface" href="https://github.com/keevinsantoos" target="_blank" rel="noopener noreferrer" data-reveal><span class="social-name">GitHub</span><span class="social-handle">@keevinsantoos</span><span class="social-count">Seguidores: não informado</span><span class="social-arrow" aria-hidden="true">↗</span></a>
-          <a class="social-card surface" href="https://www.linkedin.com/in/kevin-santos-9b450a326" target="_blank" rel="noopener noreferrer" data-reveal><span class="social-name">LinkedIn</span><span class="social-handle">Kevin Santos</span><span class="social-count">Seguidores: não informado</span><span class="social-arrow" aria-hidden="true">↗</span></a>
+          <a class="social-card surface" href="https://github.com/keevinsantoos" target="_blank" rel="noopener noreferrer" data-reveal><span class="social-name">GitHub</span><span class="social-handle">@keevinsantoos</span><span class="social-count">Seguidores: não informado</span><span class="social-arrow" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 16 16" focusable="false"><path d="M4 12 12 4M5 4h7v7"/></svg></span></a>
+          <a class="social-card surface" href="https://www.linkedin.com/in/kevin-santos-9b450a326" target="_blank" rel="noopener noreferrer" data-reveal><span class="social-name">LinkedIn</span><span class="social-handle">Kevin Santos</span><span class="social-count">Seguidores: não informado</span><span class="social-arrow" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 16 16" focusable="false"><path d="M4 12 12 4M5 4h7v7"/></svg></span></a>
         </div>
       </section>
 
@@ -46,6 +55,6 @@
       </section>
     </main>
 
-    <footer class="site-footer"><div class="footer-main"><a class="brand" href="index.html">kevin<span>.prog</span></a><p>© 2026 Kevin.prog — Belém, PA</p><nav aria-label="Navegação do rodapé"><a href="index.html">Início</a><a href="services.html">Serviços</a><a href="contact.html">Contato</a></nav><time class="local-clock" data-local-clock>--:--</time></div><div class="footer-bottom"><span>Construído com HTML, CSS e JavaScript</span><button class="go-top" type="button" data-go-top>Voltar ao topo <span aria-hidden="true">↑</span></button></div></footer>
+    <footer class="site-footer"><div class="footer-main"><a class="brand" href="index.html">kevin<span>.prog</span></a><p>© 2026 Kevin.prog — Belém, PA</p><nav aria-label="Navegação do rodapé"><a href="index.html">Início</a><a href="services.html">Serviços</a><a href="contact.html">Contato</a></nav><time class="local-clock" data-local-clock>--:--</time></div><div class="footer-bottom"><span>Construído com HTML, CSS e JavaScript</span><button class="go-top" type="button" data-go-top>Voltar ao topo <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 16 16" focusable="false"><path d="M8 13V3m0 0 4 4M8 3 4 7"/></svg></span></button></div></footer>
   </body>
 </html>
