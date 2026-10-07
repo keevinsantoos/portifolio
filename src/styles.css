@@ -1146,6 +1146,20 @@ html:has(body.portfolio-home) {
   font-size: 11px;
   line-height: 1.7;
 }
+.portfolio-home .education-detail ul {
+  display: grid;
+  gap: 5px;
+  margin: 9px 0 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  list-style: none;
+}
+.portfolio-home .education-detail li strong {
+  color: var(--text);
+  font-weight: 500;
+}
 .portfolio-home .education-source-note {
   margin: 12px 0 0;
   color: var(--muted);
