@@ -1140,6 +1140,12 @@ html:has(body.portfolio-home) {
   letter-spacing: .04em;
   text-transform: uppercase;
 }
+.portfolio-home .education-detail p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
 .portfolio-home .education-source-note {
   margin: 12px 0 0;
   color: var(--muted);
